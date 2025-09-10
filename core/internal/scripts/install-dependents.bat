@@ -6,7 +6,7 @@ if "%response%"=="yes" (
     powershell -Command "Write-Host ':=: Starting install process.' -ForegroundColor Green"
     
     : Modify this to include any other packages you want to install
-    npm install discord.js@latest mongoose@latest
+    npm install discord.js@latest mongoose@latest dotenv@latest
     goto :eof
 ) else if "%response%"=="no" (
     powershell -Command "Write-Host ':=: Cancelling the installation of dependencies.' -ForegroundColor Red"
